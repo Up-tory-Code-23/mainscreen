@@ -85,6 +85,8 @@
                             style="@style/CommonFeedHeart"/>
                         <ImageView
                             style="@style/CommonFeedFollow"/>
+                        <ImageView
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/standardLayout3">
@@ -103,7 +105,6 @@
                                     android:layout_marginLeft="10dp"
                                     android:text=" Naye0nni님 외 10명이 좋아합니다"
                                     android:textColor="#3c3c3c"/>
-
                                 <TextView
                                     android:id="@+id/text1"
                                     style="@style/FeedText"
@@ -133,6 +134,8 @@
                             style="@style/CommonFeedHeart"/>
                         <ImageView
                             style="@style/CommonFeedFollow"/>
+                        <ImageView
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/standardLayout3">
@@ -148,7 +151,7 @@
                                 <TextView
                                     style="@style/FeedText2"
                                     android:layout_marginLeft="10dp"
-                                    android:text=" Naye0nni님 외 10명이 좋아합니다"
+                                    android:text=" Naye0nni님 외 14명이 좋아합니다"
                                     android:textColor="#3c3c3c"/>
                                 <TextView
                                     android:id="@+id/text2"
@@ -182,6 +185,8 @@
                             style="@style/CommonFeedHeart"/>
                         <ImageView
                             style="@style/CommonFeedFollow"/>
+                        <ImageView
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
                     <FrameLayout
                         style="@style/standardLayout3"
@@ -202,23 +207,26 @@
                 <!-- 오른쪽 레이아웃 -->
                 <LinearLayout
                     style="@style/CommonFeedSize">
-                    <LinearLayout
-                        style="@style/standardLayout1">
+
+                    <LinearLayout style="@style/standardLayout1">
+
                         <ImageView
-                            style="@style/CommonFeedImage"
                             android:id="@+id/id_image4"
-                            android:src="@drawable/profile_4"
-                            android:clipToOutline="true"/>
+                            style="@style/CommonFeedImage"
+                            android:clipToOutline="true"
+                            android:src="@drawable/profile_4" />
                         <TextView
                             android:id="@+id/name4"
-                            android:text="Myeonji"
-                            style="@style/CommonIDText"/>
+                            style="@style/CommonIDText"
+                            android:text="Kim_berry04" />
                         <ImageView
                             android:id="@+id/heart4"
-                            style="@style/CommonFeedHeart"/>
+                            style="@style/CommonFeedHeart" />
+                        <ImageView style="@style/CommonFeedFollow" />
                         <ImageView
-                            style="@style/CommonFeedFollow"/>
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
+
                     <LinearLayout
                         style="@style/standardLayout3">
                             <LinearLayout
@@ -260,13 +268,15 @@
                             android:clipToOutline="true"/>
                         <TextView
                             android:id="@+id/name5"
-                            android:text="Myeonji"
+                            android:text="jinbae"
                             style="@style/CommonIDText"/>
                         <ImageView
                             android:id="@+id/heart5"
                             style="@style/CommonFeedHeart"/>
                         <ImageView
                             style="@style/CommonFeedFollow"/>
+                        <ImageView
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/standardLayout3">
@@ -306,13 +316,15 @@
                             android:clipToOutline="true"/>
                         <TextView
                             android:id="@+id/name6"
-                            android:text="Myeonji"
+                            android:text="nang._.nak"
                             style="@style/CommonIDText"/>
                         <ImageView
                             android:id="@+id/heart6"
                             style="@style/CommonFeedHeart"/>
                         <ImageView
                             style="@style/CommonFeedFollow"/>
+                        <ImageView
+                            style="@style/CommonFeedPlus"/>
                     </LinearLayout>
                     <FrameLayout
                         style="@style/standardLayout3"

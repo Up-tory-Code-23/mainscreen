@@ -61,6 +61,11 @@
             <LinearLayout
                 style="@style/standardLayout3">
                 <TextView
+                    style="@style/FeedText2"
+                    android:layout_marginLeft="10dp"
+                    android:text=" Naye0nni님 외 10명이 좋아합니다"
+                    android:textColor="#3c3c3c"/>
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:layout_marginTop="20dp"

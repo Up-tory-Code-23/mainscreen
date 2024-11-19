@@ -60,7 +60,7 @@
 
          <!-- 공통 피드 텍스트뷰 -->
         <style name="CommonIDText">
-            <item name="android:layout_width">70dp</item>
+            <item name="android:layout_width">100dp</item>
             <item name="android:layout_height">wrap_content</item>
             <item name="android:textSize">15dp</item>
             <item name="android:layout_marginTop">10dp</item>
@@ -84,6 +84,17 @@
         <item name="android:layout_width">100dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/follow</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- 공통 피드 더보기 -->
+    <style name="CommonFeedPlus">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/plus</item>
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:layout_marginRight">10dp</item>
         <item name="android:clickable">true</item>
