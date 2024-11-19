@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Uptory</string>
+
+        <!-- 공통 LinearLayout 스타일 -->
+        <style name="CommonLinearLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:gravity">center</item>
+            <item name="android:orientation">horizontal</item>
+        </style>
+
+        <!-- 공통 버튼 스타일 -->
+        <style name="CommonButton">
+            <item name="android:layout_width">60dp</item>
+            <item name="android:layout_height">40dp</item>
+            <item name="android:background">@drawable/button_background</item>
+            <item name="android:layout_marginLeft">20dp</item>
+            <item name="android:textSize">13dp</item>
+            <item name="android:fontFamily">casual</item>
+        </style>
+
+        <!-- 공통 SearchView 스타일 -->
+        <style name="CommonSearchView">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+        </style>
+
+        <!-- 공통 피드 레이아웃 -->
+        <style name="CommonFeed">
+            <item name="android:layout_marginTop">20dp</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_marginLeft">15dp</item>
+            <item name="android:layout_marginRight">15dp</item>
+            <item name="android:orientation">horizontal</item>
+            <item name="android:weightSum">2</item>
+            <item name="android:background">#FFFFFF</item>
+        </style>
+
+        <!-- 공통 피드 레이아웃 사이즈 -->
+        <style name="CommonFeedSize">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_weight">1</item>
+            <item name="android:layout_height">400dp</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:background">@drawable/rounded_layout</item>
+            <item name="android:layout_marginLeft">10dp</item>
+            <item name="android:layout_marginRight">10dp</item>
+        </style>
+
+         <!-- 공통 피드 이미지뷰 -->
+        <style name="CommonFeedImage">
+            <item name="android:layout_marginLeft">10dp</item>
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:layout_width">30dp</item>
+            <item name="android:layout_height">30dp</item>
+            <item name="android:background">@drawable/circle</item>
+            <item name="android:scaleType">centerCrop</item>
+        </style>
+
+         <!-- 공통 피드 텍스트뷰 -->
+        <style name="CommonIDText">
+            <item name="android:layout_width">70dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:textSize">15dp</item>
+            <item name="android:layout_marginTop">10dp</item>
+            <item name="android:layout_marginLeft">10dp</item>
+        </style>
+
+        <!-- 공통 피드 하트 -->
+       <style name="CommonFeedHeart">
+           <item name="android:layout_width">20dp</item>
+           <item name="android:layout_height">20dp</item>
+           <item name="android:src">@drawable/heart</item>
+           <item name="android:layout_marginTop">10dp</item>
+           <item name="android:layout_marginLeft">30dp</item>
+           <item name="android:clickable">true</item>
+           <item name="android:focusable">true</item>
+
+       </style>
+
+    <!-- 공통 피드 팔로우 -->
+    <style name="CommonFeedFollow">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/follow</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+
+    <!-- 스탠다드 레이아웃(width-m, height-w, horizontal) -->
+       <style name="standardLayout1">
+           <item name="android:layout_width">match_parent</item>
+           <item name="android:layout_height">wrap_content</item>
+           <item name="android:orientation">horizontal</item>
+       </style>
+
+       <!-- 스탠다드 레이아웃(width-w, height-m, horizontal) -->
+      <style name="standardLayout2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+      </style>
+
+    <!-- 스탠다드 레이아웃(width-m, height-m, horizontal) -->
+    <style name="standardLayout3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 스탠다드 레이아웃(width-m, height-m, horizontal) -->
+    <style name="standardLayout4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 피드 글 작성 텍스트뷰 -->
+    <style name="FeedText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="FeedText2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="Icon2">
+    <item name="android:layout_height">20dp</item>
+    <item name="android:layout_width">20dp</item>
+    <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+
+</resources>

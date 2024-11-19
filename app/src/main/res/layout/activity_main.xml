@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0EEEE"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 첫째줄 (검색기능) -->
+            <LinearLayout style="@style/CommonLinearLayout">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/search_view"
+                    style="@style/CommonSearchView"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    app:iconifiedByDefault="false"
+                    app:queryHint="검색어를 입력하세요" />
+            </LinearLayout>
+
+            <!-- 둘째줄(버튼) -->
+            <LinearLayout style="@style/CommonLinearLayout">
+                <android.widget.Button
+                    android:id="@+id/recommend_button"
+                    style="@style/CommonButton"
+                    android:text="추천순" />
+
+                <android.widget.Button
+                    android:id="@+id/popular_button"
+                    style="@style/CommonButton"
+                    android:text="인기순" />
+
+                <android.widget.Button
+                    android:id="@+id/following_button"
+                    style="@style/CommonButton"
+                    android:text="팔로잉" />
+
+                <android.widget.Button
+                    android:id="@+id/live_button"
+                    style="@style/CommonButton"
+                    android:text="라이브" />
+
+                <android.widget.Button
+                    android:id="@+id/recent_button"
+                    style="@style/CommonButton"
+                    android:text="최근" />
+            </LinearLayout>
+
+            <!-- 셋째줄(레이아웃) -->
+            <LinearLayout
+                style="@style/CommonFeed">
+                <!-- 왼쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image1"
+                            android:src="@drawable/profile_1"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name1"
+                            android:text="Naye0nni"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart1"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/standardLayout3">
+                            <LinearLayout
+                                android:id="@+id/image_container1"
+                                style="@style/standardLayout3"
+                                android:layout_gravity="center">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="310dp"
+                                    android:src="@drawable/picture1"
+                                    android:scaleType="fitCenter"
+                                    android:adjustViewBounds="true"/>
+                                <TextView
+                                    style="@style/FeedText2"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" Naye0nni님 외 10명이 좋아합니다"
+                                    android:textColor="#3c3c3c"/>
+
+                                <TextView
+                                    android:id="@+id/text1"
+                                    style="@style/FeedText"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" 백팩 선주문 이벤트!" />
+                            </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 오른쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image2"
+                            android:src="@drawable/profile_2"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name2"
+                            android:text="Myeonji"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart2"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/standardLayout3">
+                            <LinearLayout
+                                style="@style/standardLayout3"
+                                android:layout_gravity="center">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="310dp"
+                                    android:src="@drawable/layout2_picture1"
+                                    android:scaleType="fitCenter"
+                                    android:adjustViewBounds="true"/>
+                                <TextView
+                                    style="@style/FeedText2"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" Naye0nni님 외 10명이 좋아합니다"
+                                    android:textColor="#3c3c3c"/>
+                                <TextView
+                                    android:id="@+id/text2"
+                                    style="@style/FeedText"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="페트병 뚜껑 키링 10000원!"/>
+                            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 넷째줄(레이아웃) -->
+            <LinearLayout
+                style="@style/CommonFeed">
+                <!-- 왼쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image3"
+                            android:src="@drawable/profile_3"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name3"
+                            android:text="Ujin"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart3"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        style="@style/standardLayout3"
+                        android:gravity="center"> <!-- FrameLayout에 gravity 추가 -->
+                        <!-- VideoView를 FrameLayout에 직접 배치 -->
+                        <VideoView
+                            android:id="@+id/videoView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center" /> <!-- VideoView는 중앙으로 배치 -->
+                        <TextView
+                            android:id="@+id/text3"
+                            style="@style/FeedText"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <!-- 오른쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image4"
+                            android:src="@drawable/profile_4"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name4"
+                            android:text="Myeonji"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart4"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/standardLayout3">
+                            <LinearLayout
+                                style="@style/standardLayout3">
+                                <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:src="@drawable/layout4_picture1"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"/>
+                                <TextView
+                                    style="@style/FeedText2"
+                                    android:layout_marginLeft="10dp"
+                                    android:text=" Naye0nni님 외 10명이 좋아합니다"
+                                    android:textColor="#3c3c3c"/>
+                                <TextView
+                                    android:id="@+id/text4"
+                                    style="@style/FeedText"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="노스페이스 패딩, 아이다스 트랙탑이었던 것이 업사이클링 조명으로 된 썰 푼다.."/>
+                            </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 다섯째줄(레이아웃) -->
+            <LinearLayout
+                style="@style/CommonFeed">
+
+                <!-- 왼쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image5"
+                            android:src="@drawable/profile_2"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name5"
+                            android:text="Myeonji"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart5"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/standardLayout3">
+                        <LinearLayout
+                            style="@style/standardLayout3"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="310dp"
+                                android:src="@drawable/layout5_picture1"
+                                android:scaleType="fitCenter"
+                                android:adjustViewBounds="true"/>
+                            <TextView
+                                style="@style/FeedText2"
+                                android:layout_marginLeft="10dp"
+                                android:text=" Naye0nni님 외 10명이 좋아합니다"
+                                android:textColor="#3c3c3c"/>
+                            <TextView
+                                android:id="@+id/text5"
+                                style="@style/FeedText"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="15dp"
+                                android:text="버려진 플라스틱을 구하는 업사이클링 브랜드 6"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 오른쪽 레이아웃 -->
+                <LinearLayout
+                    style="@style/CommonFeedSize">
+                    <LinearLayout
+                        style="@style/standardLayout1">
+                        <ImageView
+                            style="@style/CommonFeedImage"
+                            android:id="@+id/id_image6"
+                            android:src="@drawable/profile_2"
+                            android:clipToOutline="true"/>
+                        <TextView
+                            android:id="@+id/name6"
+                            android:text="Myeonji"
+                            style="@style/CommonIDText"/>
+                        <ImageView
+                            android:id="@+id/heart6"
+                            style="@style/CommonFeedHeart"/>
+                        <ImageView
+                            style="@style/CommonFeedFollow"/>
+                    </LinearLayout>
+                    <FrameLayout
+                        style="@style/standardLayout3"
+                        android:gravity="center"> <!-- FrameLayout에 gravity 추가 -->
+                        <!-- VideoView를 FrameLayout에 직접 배치 -->
+                        <VideoView
+                            android:id="@+id/videoView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center" /> <!-- VideoView는 중앙으로 배치 -->
+                        <TextView
+                            android:id="@+id/text6"
+                            style="@style/FeedText"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            style="@style/Icon"
+            android:src="@drawable/home"/>
+        <ImageView
+            style="@style/Icon"
+            android:src="@drawable/shop"/>
+        <ImageView
+            style="@style/Icon"
+            android:src="@drawable/edit"/>
+        <ImageView
+            style="@style/Icon"
+            android:src="@drawable/chat"/>
+        <ImageView
+            style="@style/Icon"
+            android:src="@drawable/profile"/>
+    </LinearLayout>
+
+</LinearLayout>

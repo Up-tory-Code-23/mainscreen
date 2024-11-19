@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 상단 영역 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EEEE">
+        <!-- 상단 UI 요소는 기존 그대로 유지 -->
+        <ImageView
+            style="@style/CommonFeedImage"
+            android:id="@+id/previous"
+            android:src="@drawable/previous"
+            android:background="#F0EEEE"
+            android:clipToOutline="true"/>
+        <ImageView
+            style="@style/CommonFeedImage"
+            android:id="@+id/id_image1"
+            android:src="@drawable/profile_1"
+            android:layout_marginLeft="50dp"
+            android:clipToOutline="true"/>
+        <TextView
+            android:id="@+id/name1"
+            android:text="Naye0nni"
+            android:layout_marginLeft="90dp"
+            style="@style/CommonIDText"/>
+        <ImageView
+            android:id="@+id/heart1"
+            android:layout_marginLeft="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            style="@style/CommonFeedHeart"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/standardLayout3">
+
+            <LinearLayout
+                style="@style/standardLayout1"
+                android:gravity="center">
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/standardLayout3">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="casual"
+                    android:text=" 백팩 선주문 이벤트!\n 선주문 이벤트 금액 35000원\n 궁금하신점 언제든 편하게 문의주세용~" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text=" #업사이클링 #재활용 #환경 #야구 #가방"
+                    android:textColor="#8c8c8c"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text=" 10시간 전"
+                    android:textColor="#aaaaaa"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/standardLayout4">
+                <ImageView
+                    style="@style/Icon2"
+                    android:src="@drawable/share"/>
+                <ImageView
+                    style="@style/Icon2"
+                    android:id="@+id/scrap"
+                    android:src="@drawable/scrap_1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+            <!-- 댓글 영역 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewComments"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- 댓글 입력 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            style="@style/CommonFeedImage"
+            android:src="@drawable/profile" />
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="댓글을 입력하세요"
+            android:backgroundTint="#dcdcdc"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/buttonSubmitComment"
+            style="@style/CommonFeedImage"
+            android:src="@drawable/upload" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
